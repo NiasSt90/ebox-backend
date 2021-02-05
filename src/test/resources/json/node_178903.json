@@ -1,0 +1,139 @@
+{
+  "nid": "178903",
+  "uid": "1",
+  "name": "admin",
+  "title": "Global-Sets.com - john digweed - Transitions 769 (with fort romeau) - 24-MAY-2019",
+  "replacetitle": "Global-Sets.com - ${124341} - Transitions 769 (with ${101959}) - 24-MAY-2019",
+  "status": "1",
+  "created": "1559146573",
+  "changed": "1570892162",
+  "setcreated": "1559080800",
+  "lastheard": null,
+  "duration": 7090,
+  "taxonomy": {
+    "123": {
+      "tid": "123",
+      "vid": "2",
+      "name": "deep house",
+      "description": "",
+      "weight": "0",
+      "v_weight_unused": "0"
+    },
+    "167": {
+      "tid": "167",
+      "vid": "11",
+      "name": "set",
+      "description": "",
+      "weight": "0",
+      "v_weight_unused": "0"
+    },
+    "155": {
+      "tid": "155",
+      "vid": "2",
+      "name": "electro house",
+      "description": "",
+      "weight": "1",
+      "v_weight_unused": "0"
+    },
+    "152": {
+      "tid": "152",
+      "vid": "2",
+      "name": "progressive house",
+      "description": "",
+      "weight": "2",
+      "v_weight_unused": "0"
+    },
+    "117": {
+      "tid": "117",
+      "vid": "2",
+      "name": "tech-house",
+      "description": "",
+      "weight": "3",
+      "v_weight_unused": "0"
+    },
+    "156": {
+      "tid": "156",
+      "vid": "2",
+      "name": "vocal house",
+      "description": "",
+      "weight": "4",
+      "v_weight_unused": "0"
+    },
+    "20": {
+      "tid": "20",
+      "vid": "2",
+      "name": "house",
+      "description": "term for a genre of mischungxl (House)",
+      "weight": "11",
+      "v_weight_unused": "0"
+    },
+    "115": {
+      "tid": "115",
+      "vid": "2",
+      "name": "progressive",
+      "description": "",
+      "weight": "16",
+      "v_weight_unused": "0"
+    }
+  },
+  "votes": {
+    "my": null,
+    "avg": 5,
+    "count": "2",
+    "firstgoodvote": {
+      "uid": "56",
+      "name": "pinki",
+      "vote": "5",
+      "timestamp": "1563552496"
+    },
+    "all": [
+      {
+        "uid": "56",
+        "name": "pinki",
+        "vote": "5",
+        "timestamp": "1563552496"
+      },
+      {
+        "uid": "43",
+        "name": "Nias",
+        "vote": "5",
+        "timestamp": "1570892042"
+      }
+    ],
+    "sum": 2
+  },
+  "bookmarked": false,
+  "trackinfo": [
+    {
+      "filename": "John Digweed - Transitions 769 (with Fort Romeau) - 24-MAY-2019.mp3",
+      "downloadfilename": "global-sets.com - john digweed - transitions 769 (with fort romeau) - 24-may-2019 2019-05-29.mp3",
+      "fsize": "283627920",
+      "duration": "7090",
+      "frequency": "48000",
+      "bitrate": "320",
+      "mode": "stereo",
+      "artist": "",
+      "title": "Global-Sets.com - John Digweed - Transitions 769 (with Fort Romeau) - 24-MAY-2019"
+    }
+  ],
+  "comments": [],
+  "artists": [
+    {
+      "djid": "63399",
+      "artistnid": "101959"
+    },
+    {
+      "djid": "35030",
+      "artistnid": "124341"
+    }
+  ],
+  "myplaycount": 0,
+  "allplaycount": 7,
+  "djset": null,
+  "dj": {
+    "id": "63399",
+    "name": "fort romeau",
+    "country": "",
+    "lastfm_artistinfo_timestamp": "1569514934"
+  }
+}

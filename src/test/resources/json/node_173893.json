@@ -1,0 +1,69 @@
+{
+  "nid": "173893",
+  "uid": "1",
+  "name": "admin",
+  "title": "Global-Sets.com - aly and fila Future Sound Of Egypt 580 09 JAN 2019",
+  "replacetitle": "Global-Sets.com - ${108165} Future Sound Of Egypt 580 09 JAN 2019",
+  "status": "1",
+  "created": "1547119281",
+  "changed": "1547119442",
+  "setcreated": "1547074800",
+  "lastheard": null,
+  "duration": 7083,
+  "taxonomy": {
+    "167": {
+      "tid": "167",
+      "vid": "11",
+      "name": "set",
+      "description": "",
+      "weight": "0",
+      "v_weight_unused": "0"
+    },
+    "24": {
+      "tid": "24",
+      "vid": "2",
+      "name": "trance",
+      "description": "term for a genre of mischungxl (Trance)",
+      "weight": "23",
+      "v_weight_unused": "0"
+    }
+  },
+  "votes": {
+    "my": null,
+    "avg": null,
+    "count": "0",
+    "firstgoodvote": null,
+    "all": [],
+    "sum": 0
+  },
+  "bookmarked": false,
+  "trackinfo": [
+    {
+      "filename": "Aly and Fila Future Sound Of Egypt 580 09 JAN 2019.mp3",
+      "downloadfilename": "global-sets.com - aly and fila future sound of egypt 580 09 jan 2019 2019-01-10.mp3",
+      "fsize": "283325314",
+      "duration": "7083",
+      "frequency": "44100",
+      "bitrate": "320",
+      "mode": "stereo",
+      "artist": "aly and fila",
+      "title": "Global-Sets.com - aly and fila Future Sound Of Egypt 580 09 JAN 2019"
+    }
+  ],
+  "comments": [],
+  "artists": [
+    {
+      "djid": "55102",
+      "artistnid": "108165"
+    }
+  ],
+  "myplaycount": 0,
+  "allplaycount": 0,
+  "djset": null,
+  "dj": {
+    "id": "55102",
+    "name": "aly and fila",
+    "country": "",
+    "lastfm_artistinfo_timestamp": "1571513061"
+  }
+}
