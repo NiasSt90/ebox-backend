@@ -18,16 +18,12 @@ public class MischungxlRepositoryImpl implements MischungxlRepositoryCustom {
     private DatabaseClient client;
 
 
-
-    @Override
-    public Flux<JsonSetNode> getMischungxlNodes() {
-        return Flux.empty();
-    }
-
     @Override
     public Mono<JsonSetNode> getMischungxlNode(int nid) {
         JsonSetNodeMapper mapper = new JsonSetNodeMapper();
-        Mono<JsonSetNode> result = client.sql("SELECT * FROM node n JOIN mischungxl_nodes mxl using(nid) WHERE n.nid = :nid")
+        Mono<JsonSetNode> result = client.sql("SELECT * FROM node n "
+                                              + "JOIN mischungxl_nodes mxl using(nid) "
+                                              + "WHERE n.nid = :nid")
               .bind("nid", nid)
               .map(mapper)
               .first();

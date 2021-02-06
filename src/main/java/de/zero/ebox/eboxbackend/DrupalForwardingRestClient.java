@@ -57,6 +57,19 @@ public class DrupalForwardingRestClient {
 								.body(BodyInserters.fromDataBuffers(clientResponse.body(BodyExtractors.toDataBuffers()))));
 	}
 
+	public Mono<ServerResponse> forwardDelete(ServerRequest request) {
+		return client.delete()
+				.uri(request.uri().toString())
+				.header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+				.accept(MediaType.APPLICATION_JSON)
+				.acceptCharset(StandardCharsets.UTF_8)
+				.exchange()
+				.flatMap(clientResponse ->
+						ServerResponse.status(clientResponse.statusCode())
+								.headers(httpHeaders -> httpHeaders.addAll(clientResponse.headers().asHttpHeaders()))
+								.body(BodyInserters.fromDataBuffers(clientResponse.body(BodyExtractors.toDataBuffers()))));
+	}
+
 
 	public Mono<ServerResponse> forwardPost(ServerRequest request) {
 		return client.post()

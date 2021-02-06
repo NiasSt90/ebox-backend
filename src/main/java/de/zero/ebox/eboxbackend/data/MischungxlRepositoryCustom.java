@@ -7,7 +7,5 @@ import reactor.core.publisher.Mono;
 
 public interface MischungxlRepositoryCustom {
 
-	Flux<JsonSetNode> getMischungxlNodes();
-
 	Mono<JsonSetNode> getMischungxlNode(int nid);
 }

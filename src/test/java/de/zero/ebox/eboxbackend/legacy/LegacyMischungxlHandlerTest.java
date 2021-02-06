@@ -1,5 +1,7 @@
-package de.zero.ebox.eboxbackend;
+package de.zero.ebox.eboxbackend.legacy;
 
+import de.zero.ebox.eboxbackend.DrupalForwardingRestClient;
+import de.zero.ebox.eboxbackend.EBoxService;
 import de.zero.ebox.eboxbackend.model.JsonSetNode;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
