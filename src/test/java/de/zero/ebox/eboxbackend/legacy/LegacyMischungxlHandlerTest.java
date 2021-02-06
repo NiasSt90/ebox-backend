@@ -2,6 +2,7 @@ package de.zero.ebox.eboxbackend.legacy;
 
 import de.zero.ebox.eboxbackend.DrupalForwardingRestClient;
 import de.zero.ebox.eboxbackend.EBoxService;
+import de.zero.ebox.eboxbackend.data.MischungxlRepository;
 import de.zero.ebox.eboxbackend.model.JsonSetNode;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,12 +22,16 @@ import reactor.core.publisher.Mono;
 
 import java.io.File;
 
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 
 
+/**
+ * Verify the api behaviour based on mocked data (EboxService/Repo)
+ */
 @WebFluxTest
-@ContextConfiguration(classes = {LegacyMischungxlRouter.class, LegacyMischungxlHandler.class,
-											DrupalForwardingRestClient.class})
+@ContextConfiguration(classes = {
+		LegacyMischungxlRouter.class, LegacyMischungxlHandler.class, DrupalForwardingRestClient.class})
 class LegacyMischungxlHandlerTest {
 
 	@Autowired
@@ -34,6 +39,9 @@ class LegacyMischungxlHandlerTest {
 
 	@MockBean
 	private EBoxService eBoxService;
+
+	@MockBean
+	private MischungxlRepository mischungxlRepository;
 
 	private WebTestClient webTestClient;
 
@@ -93,7 +101,8 @@ class LegacyMischungxlHandlerTest {
 	@Test
 	public void testGetNodeById() {
 		JsonSetNode node = JsonSetNode.builder().nid(1).title("ABC").build();
-		when(eBoxService.getNode(1)).thenReturn(Mono.just(node));
+		when(eBoxService.getNode(eq(1))).thenReturn(Mono.just(node));
+		when(mischungxlRepository.getMischungxlNode(eq(1))).thenReturn(Mono.just(node));
 		webTestClient.get()
 				.uri("/js-api/mischungxl/1")
 				.accept(MediaType.APPLICATION_JSON)

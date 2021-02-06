@@ -39,6 +39,7 @@ public class LegacyMischungxlRouter {
 				.POST("/js-api/comment", handler::forwardPost)//create comment
 				.POST("/js-api/user/login", handler::forwardPost)//login (@FormUrlEncoded)
 
+				.GET("/mischungxl/download", handler::forwardGet) //fetch track url (nid: nid, trackname: downloadfilename)
 				.build();
 	}
 

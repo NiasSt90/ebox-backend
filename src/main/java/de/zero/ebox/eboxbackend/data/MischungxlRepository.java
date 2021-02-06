@@ -7,6 +7,9 @@ import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Mono;
 
 
+/**
+ * WARNING: JsonSetNode is not an entity/table...this is currently a fake repo
+ */
 public interface MischungxlRepository extends ReactiveCrudRepository<JsonSetNode, Integer>, MischungxlRepositoryCustom {
 
 	@Modifying

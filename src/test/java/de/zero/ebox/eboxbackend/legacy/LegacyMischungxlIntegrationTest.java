@@ -17,9 +17,12 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.nio.charset.StandardCharsets;
 
 
+/**
+ * compare new implementation with old (drupal based) one.
+ */
 @SpringBootTest
 @AutoConfigureWebTestClient
-class LegacyMischungxlRouterTest {
+class LegacyMischungxlIntegrationTest {
 
 	@Autowired
 	private ApplicationContext context;
