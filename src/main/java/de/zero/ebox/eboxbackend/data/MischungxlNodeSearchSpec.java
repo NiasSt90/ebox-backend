@@ -34,7 +34,7 @@ public class MischungxlNodeSearchSpec {
 
     public int entriesperartist;//Anzahl der Einträge pro Artist im Ergebnis reduzieren
 
-    public int filterid;//vordefinierter filter...alle anderen werte sind dann egal
+    public int filterid;//vordefinierter filter...alle anderen werte sind dann OnTop (ergänzen/überschreiben den Filter)
 
 
 }

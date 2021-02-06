@@ -1,0 +1,18 @@
+= NextGen Backend for Electrobox
+
+Based on Reactive-Spring (Webflux) this code should replace the old drupal backend +
+and provide the needed REST-Services for all Electrobox (formerly named Manitoba-App) projects like
+
+- Electrobox-Android
+- Electrobox-Web(React)/SPA
+- Electrobox-Kodi (python developer support/new-owner needed!)
+- Electrobox-Alexa (still privat/prototype)
+
+The project milestones:
+
+. a Backend with same security-support (Form-Submit/Token) but all calls are forwarded to drupal backend.
+. replace each single service with an own implementation based on the exakt same database. (*same layout and database*). All services should behave exactly as the legacy ones.
+. add some new (REST)services for file-uploads and other management functions to replace some still needed parts of the old Drupal-UI.
+. From here the old backend can be removed, if Electrobox-Web has added the needed upload/management parts.
+. add modern security (at first optional) with OpenID-Connect
+. improve api (/v2) with better structured services.

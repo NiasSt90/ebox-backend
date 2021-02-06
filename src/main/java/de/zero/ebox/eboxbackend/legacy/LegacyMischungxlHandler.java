@@ -15,6 +15,11 @@ import java.util.List;
 
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
+
+/**
+ * If already implemented, parse parameters from request and handover call to {@link EBoxService}<br/>
+ * if not implemented, forward the call to the old drupal backend.
+ */
 @Service
 @AllArgsConstructor
 public class LegacyMischungxlHandler {
@@ -38,7 +43,6 @@ public class LegacyMischungxlHandler {
         return ok().body(repository.getMischungxlNode(nid), JsonSetNode.class);
 
     }
-
 
     /**
      * Retrieves a listing of mischungxl nodes
@@ -80,15 +84,14 @@ public class LegacyMischungxlHandler {
     }
 
 
-
-
-
-
     public Mono<ServerResponse> getNode(ServerRequest request) {
         return ok().body(eBoxService.getNode(Integer.parseInt(request.pathVariable("nid"))), JsonSetNode.class);
     }
 
 
+    public Mono<ServerResponse> forwardGet(ServerRequest request) {
+        return drupalForwardingClient.forwardGet(request);
+    }
     public Mono<ServerResponse> forwardPost(ServerRequest request) {
         return drupalForwardingClient.forwardPost(request);
     }
